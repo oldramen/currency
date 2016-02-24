@@ -1,16 +1,21 @@
-doctype html
-html
-    head
-        title Currency
-    body
-        h1 Currency Converter
-        
-        form(action="/convert", method="GET")
-            div(class="currency_form")
-                span.label Amount in Dollars
-                input(type="text", name="dollaramount")
-                select(name="tocurrency")
-                    option(value="Euro") Euros
-                    option(value="Pound") Pounds
-            div(class="button")
-                input(type="submit", value="Convet!")
+extends base
+
+block content
+
+    h1 Currency Converter
+
+    form(action="/convert", method="GET")
+        div(class="currency_form")
+            span.label Convert
+            input(type="text", name="dollaramount")
+            select(name="fromcurrency")
+                option(value="Dollar") Dollar(s)
+                option(value="Euro") Euro(s)
+                option(value="Pound") Pound(s)
+            span.label to
+            select(name="tocurrency")
+                option(value="Dollar") Dollar(s)
+                option(value="Euro") Euro(s)
+                option(value="Pound") Pound(s)
+        div(class="button")
+            input(type="submit", value="Convert!")

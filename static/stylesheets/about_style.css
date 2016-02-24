@@ -1,0 +1,21 @@
+body {
+    width: 750px;
+    margin: 45px auto;
+    background: #fcfcfc;
+    color: #937;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 700;
+}
+input[type='text'] {
+    width: 4em;
+}
+input,.label,select {
+    margin-right: 10px;
+}
+.button {
+    padding-top: 15px;
+}
+hr {
+    margin: 20px 0;
+}
